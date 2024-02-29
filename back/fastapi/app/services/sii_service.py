@@ -27,7 +27,7 @@ class SiiService:
         url = setting.get_sii_uf_year_url(year)
         date_keys = ['day', 'month', 'year']
         date_dict = dict(zip(date_keys, date_split))
-        scrape_response = scrape_website(url, 'sii_soup', 'find_value_for_day', date_dict)
+        scrape_response = scrape_website(url, 'sii_soup', 'find_value_for_month_day', date_dict)
         (status, value) = tuple(scrape_response.values())
         return {'status': status, 'value': value}
     

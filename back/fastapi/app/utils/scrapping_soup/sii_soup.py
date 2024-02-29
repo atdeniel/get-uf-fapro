@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 
-def find_value_for_day(soup: BeautifulSoup, parameters: dict) -> str:
+def find_value_for_month_day(soup: BeautifulSoup, parameters: dict) -> str:
     """
     Busca y extrae el valor correspondiente a un día específico de un mes dentro de una tabla
     en una página web, utilizando BeautifulSoup para analizar el contenido HTML.

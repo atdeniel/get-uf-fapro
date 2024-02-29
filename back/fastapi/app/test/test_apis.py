@@ -1,16 +1,9 @@
-import unittest
-from unittest.mock import patch, MagicMock
-
-from utils.beautiful_soup import scrape_website
-from bs4 import BeautifulSoup
-
 import json
+import unittest
+from unittest.mock import patch
 
 from routers.sii import get_uf
-from functools import wraps
 
-import requests
-import importlib
 
 class TestGetUF(unittest.IsolatedAsyncioTestCase):
 

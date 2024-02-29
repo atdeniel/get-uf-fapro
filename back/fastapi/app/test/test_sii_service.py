@@ -1,6 +1,5 @@
 import unittest
 from unittest.mock import patch
-
 from services.sii_service import sii_service
 
 class TestSiiService(unittest.TestCase):

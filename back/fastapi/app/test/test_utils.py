@@ -2,10 +2,6 @@ import unittest
 from unittest.mock import patch, MagicMock
 
 from utils.beautiful_soup import scrape_website
-from bs4 import BeautifulSoup
-
-import requests
-import importlib
 
 class TestBeautifulSoup(unittest.TestCase):
 
